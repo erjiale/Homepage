@@ -19,6 +19,7 @@ section {
 	padding: 1em 20em;
 }
 
+
 div.desc {
     padding: 5px;
     text-align: center;
@@ -37,5 +38,17 @@ div.photo {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  /*border: 1px solid rgb(0, 0, 0);*/
+}
+
+ul {
+	padding-left: 9em;
+}
+
+li {
+	margin-bottom: 0.20em;
+	text-align: left;
+}
+
+footer {
+	color: #3366ff;
 }
