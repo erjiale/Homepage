@@ -1,71 +1,61 @@
 <!DOCTYPE html>
-
 <html>
-
 	<head>
-		<title>JiaLe Qiu</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<title>Jay Qiu</title>
+		<link rel="shortcut icon" href="jia-logo-black.ico">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 
 	<body>
-		<header>
-			<h1>Jiale's Homepage</h1>
-		</header>
+		<!----------------- Header section ------------------->
+		<section>
+			<!--navigation bar -->
+			<nav>
+				<a href="#" class="logo"><img id="changeLogoColor" alt="Jia" src="./Images/jia-logo-black.png" class="nav-logo-size"></a>
+				<ul>
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+				</ul>
+			</nav>
 
-		<section class="About">
-			<h2>About Me</h2>
-			<p> My name is JiaLe Qiu. I am currently a student at CUNY Hunter College aiming for a double major in Computer Science and Economics, and my expected graduation date is May 2020. I was born in New York City, but raised in Spain (Canary Islands). In addition, I am fluent in English, Spanish, Mandarin, and Fuzhounese. I also have a constant desire to learn new technologies and improve my skills.</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10">
+						<div class="header-text">
+							<p>Hello,</p>
+							<p>I'M <u>JIALE</u></p>
+							<p>I am a Software Engineer <br>
+								& Aspiring Product Manager</p>
+							<a href="https://linkedin.com/in/jiale-qiu"><button class="contact-me border border-round">Contact Me</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
-		<div class="photo">
-			<a>
-				<img src="./Images/myphoto2.jpg" class="center">
-			</a>
-			<div class="desc">This is me!</div>
-		</div>
-				
-		<section>
-			<h2>Projects</h2>
-			<p><b>1) Ravenous website:</b> Built a single-page food-querying web application using HTML, CSS, and JavaScript. Implemented a search bar that takes a food keyword and the user’s geolocation to search Yelp with React.js and Yelp API. </p>
-		</section>
-
-		<div class="ravenous">
-			<a>
-				<img src="./Images/ravenous1.png" class="center">
-				<img src="./Images/ravenous2.png" class="center">
-			</a>
+		<!----------------- About container ------------------->
+		<div class="about-section">
+			<p class="h2 pt-5 text-center font-weight-bold">ABOUT ME</p>
+			<div class="about-container">
+				<img class="about-photo" src="Images/myphoto-white.png"/>
+				<div class="about-text">
+					<p class="h4 pt-2">Full-Stack Software Developer</p>
+					<p>My name is JiaLe Qiu. I am currently a student at CUNY Hunter College aiming
+						for a double major in Computer Science and Economics, and my expected 
+						graduation date is May 2020. I was born in New York City, but raised 
+						in Spain (Canary Islands). In addition, I am fluent in English, Spanish, 
+						Mandarin, and Fuzhounese. I also have a constant desire to learn new technologies 
+						and improve my skills.</p>
+				</div>
+			</div>
 		</div>
 
-		<section>
-			<p class="link-style"> Link: <a href="https://github.com/erjiale/ravenous-website/tree/master/ravenous"> Ravenous Website Repository </a> </p>
-				<!--End of Project 1-->
+		<!----------------- Projects container ------------------->
+		<div class="projects-section">
+			<p class="h2 pt-5 text-center font-weight-bold">PROJECTS</p>
+		</div>
 		
-			<p><b>2) C++ Dictionary:</b> Built a dictionary searcher in C++ that outputs the inputted word’s pronunciation and words with the same pronunciation. Allowed users to output words that can be obtained by adding a phoneme, removing a phoneme, or replacing one.  </p>
-
-			<p class="link-style"> Link: <a href="https://github.com/erjiale/Dictionary-Pronunciation"> C++ Dictionary Repo </a> </p>
-
-				<!--End of Project 2-->
-
-		</section>
-
-		<section>
-			<h2>Interests</h2>
-			<!-- <ul> -->
-				<li>Soccer</li>
-				<li>Machine Learning</li>
-				<li>Artificial Intelligence</li>
-				<li>Mobile development (iOS)</li>
-				<li>Full-Stack development</li>
-				<li>Blockchain</li>
-			<!-- </ul> -->
-		</section>
-				<!--End of Interests-->
-
-
-		<footer>
-			<p></p>
-			<span>LinkedIn: <a href="https://www.linkedin.com/in/jiale-jay-qiu-548812181"> www.linkedin.com/in/jiale-jay-qiu-548812181 </a> </span>
-  		</footer>
 	</body>
-
 </html>

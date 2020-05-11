@@ -1,78 +1,173 @@
-
 body {
-	font-family: "Open Sans", Helvetica;
-}
+    background-color: #ffffff;
+    margin: 0px;   
+    padding: 0px;
 
-header {
-	padding: 2em 4em;
-	text-align: center;
-	background: linear-gradient(to right, #3366ff 0%, #33ccff 100%);
-}
+}   
 
-h1 {
-	font-size: 2.25em;
-	color: white;
-}
-
-h2 {
-	text-decoration: underline;
-	color: #3366ff;
-}
-
-section {
-	text-align: center;
-	padding: 0em 10em;
-}
-
-
-div.desc {
-    padding: 5px;
-    text-align: center;
-}
-
-div.photo {
-    margin: 0;
-    border: 1px solid rgb(0, 0, 0);
-    width: 16em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-div.ravenous {
-    margin: 0;
-    border: 1px solid rgb(0, 0, 0);
-    width: 28em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-/* 
 ul {
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
-} */
-
-li {
-	margin-bottom: 0.20em;
-    /* text-align: left; */
     list-style: none;
 }
 
-.link-style {
-	color: rgb(212,175,55); /*golden color*/
-}
-
-footer {
-	color: #3366ff;
-}
-
 a {
-	color: black;
+    text-decoration: none;
+}
+
+section {
+    width: 100%;
+    height: 95vh;
+    background-image: url("./Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-color: #0f0f0f;
+}
+/* ------------ Navigation bar --------------------------------------------------------------------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 5%;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav ul li a {
+    margin: 35px;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-logo-size {
+    height: 25px; 
+    width: 31px;
+}
+
+.active {
+    font-weight: bold;
+    color: #2d2a2a;
+}
+/* ------------ Header-text --------------------------------------------------------------------*/
+.header-text {
+    padding-top: 12%;
+    padding-left: 6%;
+}
+
+.header-text p {
+    line-height: 0px;
+    margin: 45px 0px 25px;
+}
+
+.header-text p:nth-child(1){
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 4.5vh;
+} 
+
+.header-text p:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+    color: #ffffff;
+    font-size: 10vh;
+}
+
+.header-text p:nth-child(3) {
+    font-family: myriad pro regular;
+    color: #8f8f8f;
+    font-size: 5vh;
+    line-height: 5vh;
+} 
+
+.header-text button {
+    width: 130px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: Comic;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    margin: 0px 10px;
+}
+
+.contact-me {
+    background-color: #ffffff;
+    color: #0f0f0f;
+}
+
+.contact-me:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+/* ------------ About Section --------------------------------------------------------------------*/
+.about-section {
+    height: 95vh;
+    background-image: url("./Images/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    background-color: #0f0f0f;
+}
+
+.about-container {
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0.2);
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    margin-top: 2%;
+    background-color: #C0C0C0;
+        display: flex;
+}
+
+.about-photo {
+    height: 70%;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.about-text {
+    margin-right: 10px;
+    overflow: auto;
+}
+
+.about-text p:nth-child(1) {
+    color: #444444;
+    font-weight: 600;
+    text-shadow: 1px 1px darkgray;
+    /* margin-left: 5%; */
+}
+
+.about-text p:nth-child(2) {
+    color: #000000;
+    font-weight: 600;
+    /* margin-left: 5%; */
+}
+
+/* ------------ Projects Section --------------------------------------------------------------------*/
+.projects-section {
+    height: 95vh;
+    background-color: #000000;
 }
