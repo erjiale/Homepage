@@ -6,6 +6,7 @@
 		<link rel="shortcut icon" href="jia-logo-black.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="./js/script.js"></script>
 	</head>
 
 	<body>
@@ -16,7 +17,8 @@
 				<a href="#" class="logo"><img id="changeLogoColor" alt="Jia" src="./Images/jia-logo-black.png" class="nav-logo-size"></a>
 				<ul>
 					<li><a href="#" class="active">Home</a></li>
-					<li><a href="#">Portfolio</a></li>
+					<li><a href="javascript:scrollToAbout()">About</a></li>
+					<li><a href="javascript:scrollToProjects()">Portfolio</a></li>
 				</ul>
 			</nav>
 
@@ -36,7 +38,7 @@
 		</section>
 
 		<!----------------- About container ------------------->
-		<div class="about-section">
+		<div class="about-section" id="about-sect">
 			<p class="h2 pt-5 text-center font-weight-bold">ABOUT ME</p>
 			<div class="about-container">
 				<img class="about-photo" src="Images/myphoto-white.png"/>
@@ -53,7 +55,7 @@
 		</div>
 
 		<!----------------- Projects container ------------------->
-		<div class="projects-section">
+		<div class="projects-section" id="projects-sect">
 			<p class="h2 pt-5 text-center font-weight-bold">PROJECTS</p>
 		</div>
 		
