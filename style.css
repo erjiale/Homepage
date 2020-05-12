@@ -37,6 +37,7 @@ nav {
 nav ul {
     display: flex;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
@@ -54,10 +55,6 @@ nav ul li a:hover {
 }
 
 .nav-logo-size {
-    /* height: 25px; 
-    width: 31px; */
-    /* height: 4.25vh;
-    width: 5vh; */
     height: 2em;
     width: 2.5em;
 }
@@ -169,12 +166,16 @@ button:active {
 }
 
 .about-text {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
     margin-right: 1%;
     overflow: auto;
     color: black;
     font-weight: 600;
 }
 
+.about-text span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /* .about-text p:nth-child(1) {
     color: #444444;
     font-weight: 600;
@@ -190,7 +191,8 @@ button:active {
     color: white;
 }
 
-/*1000px and down*/
+/* =======================================MEDIA QUERIES=========================================== */
+/*--- 1000px and down------------------------------------*/
 @media(max-width:1000px) {
     *{
         box-sizing:border-box;
@@ -209,6 +211,7 @@ button:active {
     }
 }
 
+/*--- 750px & DOWN ------------------------------------*/
 @media(max-width: 750px) {
     section {
         background-size: cover;
@@ -236,7 +239,7 @@ button:active {
         height: 100vh;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        /* z-index: 1; */
         display: none;
     }
 
