@@ -4,11 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width", initial-scale="1.0">
 		<title>Jay Qiu</title>
-		<link rel="shortcut icon" href="jia-logo-black.ico">
+		<link rel="shortcut icon" href="./img/logos/jia-logo-black.ico">
 		<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<script src="./js/script.js"></script>
+		<script type="text/javascript" src="js/jQuery.js"></script>
+
 	</head>
 
 	<body>
@@ -16,7 +18,7 @@
 		<section>
 			<!--navigation bar -->
 			<nav>
-				<a href="#" class="logo"><img id="changeLogoColor" alt="Jia" src="./Images/jia-logo-black.png" class="nav-logo-size"></a>
+				<a href="#" class="logo"><img id="changeLogoColor" alt="Jia" src="./img/logos/jia-logo-black.png" class="nav-logo-size"></a>
 				<ul>
 					<li><a href="#" class="active">Home</a></li>
 					<li><a href="javascript:scrollToAbout()">About</a></li>
@@ -40,12 +42,12 @@
 			</div>
 		</section>
 
-		<!----------------- About container ------------------->
+		<!----------------- About section ------------------->
 		<div class="about-section" id="about-sect">
 			<p class="h2 mt-5 text-center font-weight-bold">ABOUT ME</p>
 			<div class="about-container">
 				<!-- My image -->
-				<img class="about-photo" src="Images/myphoto-white.png"/>
+				<img class="about-photo" src="img/myphoto-white.png"/>
 				<div class="about-text">
 					<p class="pt-2">I am Jiale Qiu, or you can call me Jay. I became interested in computer science
 						because I found coding to be a very fun and interesting activity. At first, I struggled
@@ -64,13 +66,21 @@
 			</div>
 		</div>
 
-		<!----------------- Projects container ------------------->
+		<!----------------- Projects section ------------------->
 		<div class="projects-section" id="projects-sect">
 			<p class="h2 pt-5 text-center font-weight-bold">PROJECTS</p>
+			<p>Check out </p>
 		</div>
 		
+		<!----------------- Footer container ------------------->
+		<div class="footer-section">
+			<p class="h2 pt-2 pl-3">Get in touch!</p>
+			<a href="https://linkedin.com/in/jiale-qiu"><img src="img/logos/LI-Logo.png" class="footer-logo"></a>
+			<a href="https://github.com/erjiale"><img src="img/logos/GitHub_Logo.png" class="footer-logo"></a>
+		</div>
+
+
 		<!-- JQuery ------------------------------------------>
-		<script type="text/javascript" src="js/jQuery.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.toggle').click(function() {
