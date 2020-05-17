@@ -1,3 +1,3 @@
 # Homepage
 Personal Website @ <a href="http://erjiale.github.io">erjiale.github.io</a>
-<img src="./Images/bg.jpg"/>
+<img src="./img/bg.jpg"/>
