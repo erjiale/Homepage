@@ -100,8 +100,29 @@ nav ul li a:hover {
     font-size: 1.75em;
     line-height: 0.85em;
 } 
-
-.header-text button {
+/* .header-text img {
+    width: 35px;
+    height: 30px;
+    display: inline-block;
+} */
+.header-logo {
+    position: relative;
+    display: inline-block;
+}
+.header-logo img {
+    width: 36px;
+    height: 31px;
+}
+.show-onHover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-logo:hover .show-onHover {
+    display: inline;
+}
+/* .header-text button {
     width: 11em;
     height: 3em;
     border-radius: 1em;
@@ -110,19 +131,17 @@ nav ul li a:hover {
     outline: none;
     margin: 0 1em;
 }
-
 .contact-me {
     background-color: #ffffff;
     color: #0f0f0f;
 }
-
 .contact-me:hover {
     background-color: #000000;
     color: #ffffff;
     border: none;
     transition-duration: 0.4s;
     transform: scale(1.1);
-}
+} */
 
 /* ------------ About Section --------------------------------------------------------------------*/
 .about-section {
@@ -135,7 +154,7 @@ nav ul li a:hover {
 }
 
 .about-container {
-    border-radius: 20px;
+    /* border-radius: 20px; */
     box-shadow: 2px 2px 12px rgba(0, 0, 0.2);
     width: 60em;
     height: 24em;
@@ -172,16 +191,12 @@ nav ul li a:hover {
     height: 100vh;
     background-color: #ffffff;
 }
-.projects-section img {
-    width: 240px;
-}
 
 .project-list {
     list-style: none;
     width: 50%;
     height: auto;
     float: left;
-    /* background-color: #000000; */
 }
 
 .project-card {
@@ -334,13 +349,14 @@ nav ul li a:hover {
 
     .project-list {
         width: 100%;
-        display: inline-block;  
+        display: inline-block; 
     }
-
     .footer-logo {
         width: 20%; 
     }
-
+    .project-card {
+        height: 300px;
+    }
     /* .project-card img {
         height: 150px;
         width: 550px;

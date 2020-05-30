@@ -21,14 +21,14 @@
 			<nav>
 				<a href="#" class="logo"><img id="changeLogoColor" alt="Jia" src="./img/logos/jia-logo-black.png" class="nav-logo-size"></a>
 				<ul>
-					<li><a href="#" class="active">Home</a></li>
+					<li><a href="javascript:scrollToHome()">Home</a></li>
 					<li><a href="javascript:scrollToAbout()">About</a></li>
 					<li><a href="javascript:scrollToProjects()">Portfolio</a></li>
 				</ul>
 				<div class="toggle"></div>
 			</nav>
 
-			<div class="container">
+			<div class="container" id="home-sect">
 				<div class="row ">
 					<div class="col-lg-12">
 						<div class="header-text text-center">
@@ -36,7 +36,20 @@
 							<p>I'M <u>JIALE</u></p>
 							<p>I am a Software Engineer <br>
 								& Aspiring Product Manager</p>
-							<a href="https://linkedin.com/in/jiale-qiu"><button class="contact-me border border-round">Contact Me</button></a>
+							<!-- <a href="https://linkedin.com/in/jiale-qiu"><button class="contact-me border border-round">Contact Me</button></a> -->
+							<div class="header-logo">
+								<a href="https://linkedin.com/in/jiale-qiu">
+									<img src="img/logos/LI-In-Bug-white.png">
+									<img src="img/logos/LI-In-Bug-black.png" class="show-onHover">
+								</a>
+							</div>
+							<div class="header-logo">
+								<a href="https://github.com/erjiale">
+									<img src="img/logos/GitHub-Mark-Light-120px-plus.png">
+									<img src="img/logos/GitHub-Mark-120px-plus.png" class="show-onHover">
+								</a>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -54,7 +67,7 @@
 						<p class="pt-2">I am Jiale Qiu, or you can call me Jay. I became interested in computer science
 							because I found coding to be a very fun and interesting activity. At first, I struggled
 							a lot because I did not have any previous programming experience. </p>
-						<p>Working my way through different challenges, I encountered very difficult ones I	
+						<p>Working my way through different challenges, I encountered some that I	
 							did not know how to solve. I was unconvinced I could not solve them, so I researched
 							and with help from my teacher and friends, I tried out different ways I could tackle 
 							the problem until I got it. I realized the harder a challenge, the more hard work, research,
@@ -92,6 +105,7 @@
 						</div>
 					</div>
 				</li>
+				
 			</ul>
 		</div>
 
@@ -105,7 +119,6 @@
 				<li class="footer-list text-center">
 					<a href="https://github.com/erjiale"><img src="img/logos/GitHub_Logo.png" class="footer-logo"></a>
 				</li>
-				
 			</ul>
 		</div>
 
@@ -116,7 +129,6 @@
 				$('.toggle').click(function() {
 					$('.toggle').toggleClass('active')
 					$('nav').toggleClass('active')
-					
 				})
 			})
 		</script>
