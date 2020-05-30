@@ -121,9 +121,6 @@ nav ul li a:hover {
     color: #ffffff;
     border: none;
     transition-duration: 0.4s;
-}
-
-button:active {
     transform: scale(1.1);
 }
 
@@ -144,7 +141,8 @@ button:active {
     height: 24em;
     margin: auto;
     margin-top: 2%;
-    background-color: #C0C0C0;
+    /* background-color: #C0C0C0; */
+    background-color: #fcfcfc;
     display: flex;
     align-items: center;
     position: relative;
@@ -217,11 +215,14 @@ button:active {
 /* ------------ Footer Section --------------------------------------------------------------------*/
 .footer-section {
     height: auto;
-    background-color: #d3d3d3;
+    background-color: #ffffff;
 }
 .footer-logo {
     width: 10%;
     margin: 1% 5%;
+}
+.footer-logo:hover {
+    transform:scale(1.1);
 }
 .footer-list {
     list-style: none;
@@ -229,7 +230,7 @@ button:active {
     padding: 0;
     margin: 0;
     float: left;
-    background-color: #d3d3d3;
+    background-color: #ffffff;
 } 
 /* =======================================MEDIA QUERIES=========================================== */
 /*--- 1000px and down------------------------------------*/
@@ -333,8 +334,11 @@ button:active {
 
     .project-list {
         width: 100%;
-        /* height: 1000px; */
         display: inline-block;  
+    }
+
+    .footer-logo {
+        width: 20%; 
     }
 
     /* .project-card img {
