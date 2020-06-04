@@ -194,7 +194,7 @@ nav ul li a:hover {
 
 .project-list {
     list-style: none;
-    width: 50%;
+    width: 33%;
     height: auto;
     float: left;
 }
@@ -345,6 +345,7 @@ nav ul li a:hover {
 
     .about-photo {
         margin-top: 0;
+        width: 30%;
     }
 
     .project-list {
