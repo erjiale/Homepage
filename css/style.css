@@ -35,7 +35,6 @@ nav {
     padding: 0px 5%;
     position: fixed;
     z-index: 1;
-    /* padding: 0px 10em; */
 }
 
 nav ul {
@@ -45,10 +44,8 @@ nav ul {
 }
 
 nav ul li a {
-    /* margin: 2vh 3vh; */
     margin: 0 1em;
     color: #979797;
-    /* font-size: 3vh; */
     font-size: 1.1em;
     font-weight: 600;
 }
@@ -100,11 +97,6 @@ nav ul li a:hover {
     font-size: 1.75em;
     line-height: 0.85em;
 } 
-/* .header-text img {
-    width: 35px;
-    height: 30px;
-    display: inline-block;
-} */
 .header-logo {
     position: relative;
     display: inline-block;
@@ -122,26 +114,6 @@ nav ul li a:hover {
 .header-logo:hover .show-onHover {
     display: inline;
 }
-/* .header-text button {
-    width: 11em;
-    height: 3em;
-    border-radius: 1em;
-    font-weight: bold;
-    font-size: 0.75em;
-    outline: none;
-    margin: 0 1em;
-}
-.contact-me {
-    background-color: #ffffff;
-    color: #0f0f0f;
-}
-.contact-me:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    transition-duration: 0.4s;
-    transform: scale(1.1);
-} */
 
 /* ------------ About Section --------------------------------------------------------------------*/
 .about-section {
@@ -154,18 +126,15 @@ nav ul li a:hover {
 }
 
 .about-container {
-    /* border-radius: 20px; */
     box-shadow: 2px 2px 12px rgba(0, 0, 0.2);
     width: 60em;
     height: 24em;
     margin: auto;
     margin-top: 2%;
-    /* background-color: #C0C0C0; */
     background-color: #fcfcfc;
     display: flex;
     align-items: center;
     position: relative;
-    /* overflow: auto; */
 }
 
 .about-photo {
@@ -203,9 +172,7 @@ nav ul li a:hover {
     height: 400px;
     background-color: #000000;
     border: 10px solid #ffffff;
-    /* color: white; */
     padding: 10px;
-    /* margin-bottom: 20px; */
     display: flex;
     align-items: center; /* y-axis center, work with display:flex*/
     justify-content: center;/* x-axis center*/
@@ -217,11 +184,6 @@ nav ul li a:hover {
     color: white;
 }
 .project-card img {
-    /* height: 150px; */
-    /* width: 300px; */
-    /* height: 100%; */
-    /* width: 90%; */
-    /* max-width: 90%; */
     max-height: 100%;
     display: block;
     margin: auto;    
@@ -324,9 +286,6 @@ nav ul li a:hover {
     }
     
     .about-section {
-        /* background-image: none; */
-        /* background-color: #ffffff; */
-        /* height: 110vh; */
         height: auto;
     }
     
@@ -358,23 +317,8 @@ nav ul li a:hover {
     .project-card {
         height: 300px;
     }
-    /* .project-card img {
-        height: 150px;
-        width: 550px;
-        display: block;
-        margin: auto;    
-    } */
-    /* .services-text {width:100%;} */
 }
 
-/* @media(max-width: 600px) {
-    .project-card img {
-        height: 150px;
-        width: 95%;
-        display: block;
-        margin: auto;    
-    }
-} */
 /* Height 500px and less*/
     @media(max-height: 500px) {
         section {
