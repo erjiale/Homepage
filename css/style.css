@@ -60,28 +60,28 @@ nav ul li a:hover {
     height: 2em;
     width: 2.5em;
 }
-
-.active {
-    font-weight: bold;
-    color: #2d2a2a;
-}
 /* ------------ Header-text --------------------------------------------------------------------*/
 .header-text {
     padding: 10em 5em;
+    text-align: center;
 }
-
 .header-text p {
     line-height: 1.25em;
+    overflow: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
 }
-
 .header-text p:nth-child(1){
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #000000;
     font-size: 2em;
     margin-bottom: 0;;
-} 
-
+    width: 3em;
+    animation: typing1 0.6s steps(15, end);
+    animation-fill-mode: forwards;
+    border-right: .15em solid black;
+}
 .header-text p:nth-child(2) {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -89,19 +89,84 @@ nav ul li a:hover {
     color: #ffffff;
     font-size: 3em;
     margin-bottom: 0;
+    opacity: 0;
+    width: 5.5em;
+    animation: typing2 0.75s steps(35, end);
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+    border-right: .15em solid white;
 }
-
 .header-text p:nth-child(3) {
     font-family: myriad pro regular;
     color: #181818;
     font-size: 1.75em;
     line-height: 0.85em;
-} 
+    opacity: 0;
+    width: 11em;
+    animation: typing3 0.75s steps(50, end);
+    animation-fill-mode: forwards;
+    animation-delay: 1.35s;
+    border-right: .15em solid black;
+}
+.header-text p:nth-child(4) {
+    font-family: myriad pro regular;
+    color: #181818;
+    font-size: 1.75em;
+    line-height: 0.85em;
+    opacity: 0;
+    width: 13em;
+    animation: typing3 0.75s steps(50, end);
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+    border-right: .15em solid black;
+}
+@keyframes typing1 {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid black;
+    }
+    100% {
+      border: none;
+    }
+}
+@keyframes typing2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid white;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+}
+@keyframes typing3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid black;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+}
 .header-logo {
     position: relative;
     display: inline-block;
 }
 .header-logo img {
+    margin-top: 1em;
     width: 36px;
     height: 31px;
 }
@@ -171,24 +236,69 @@ nav ul li a:hover {
 .project-card {
     height: 400px;
     background-color: #000000;
-    border: 10px solid #ffffff;
+    margin: 10px;
     padding: 10px;
     display: flex;
     align-items: center; /* y-axis center, work with display:flex*/
     justify-content: center;/* x-axis center*/
+    color: white;
 }
 .project-card a {
     color: white;
 }
-.project-card p {
-    color: white;
+
+.vermilion:hover {
+    background-color: rgb(134, 25, 6);
+    transition: background-color 0.05s ease 0.2s;
+    cursor: pointer;
 }
-.project-card img {
-    max-height: 100%;
-    display: block;
-    margin: auto;    
+.recipeFinder:hover {
+    background-color: rgb(240, 136, 0);
+    transition: background-color 0.05s ease 0.2s;
+    cursor: pointer;
 }
 
+.recipeFinder-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    border: 1px solid #888;
+    left: 0;
+    top: 0;
+    width: 100%;     
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+.recipeFinder-modal div {
+    margin: auto;
+    width: 66%;
+}
+.recipeFinder-header {
+    background-color: rgb(240, 136, 0);
+    padding: 5px 20px;
+}
+.recipeFinder-content {
+    background-color: #fefefe;
+    padding: 20px;
+}
+.recipeFinder-modal img {
+    width: 100%;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 /* ------------ Footer Section --------------------------------------------------------------------*/
 .footer-section {
     height: auto;
@@ -238,7 +348,6 @@ nav ul li a:hover {
 
     nav ul {
         box-sizing: border-box;
-        display: flex;
         margin: 0px;
         padding: 0px;
         background-color: #ffffff;
@@ -280,9 +389,9 @@ nav ul li a:hover {
         right: 2em;
         line-height: 0;
     }
-
+    
     nav.active ul {
-        display: flex !important;
+        display: flex;
     }
     
     .about-section {
