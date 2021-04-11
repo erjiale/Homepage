@@ -1,11 +1,15 @@
 #landing-section {
+  height: 760px;
   width: 100%;
-  height: 95vh;
-  background-image: url("../img/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   position: relative;
   background-color: #0f0f0f;
+}
+#landing-section > img {
+  object-fit: cover;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 #landing-section ul {
   list-style: none;
@@ -14,18 +18,23 @@
   text-decoration: none;
 }
 
+#home-sect {
+  height: 100%;
+}
+
 /* ------------ Navigation/Header bar --------------------------------------------------------------------*/
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 2.5em;
-  width: 100%;
+  width: inherit;
   background-color: transparent;
   padding: 0px 5%;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   transition: all 0.3s ease-in;
+  max-width: inherit;
 }
 #navbar ul {
   display: flex;
@@ -44,15 +53,15 @@
   cursor: pointer;
 }
 
-#navbar.active {
+#navbar.white-header {
   background: white;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in;
 }
-#navbar.active ul li a {
+#navbar.white-header ul li a {
   color: rgba(125, 125, 125, 0.95);
 }
-#navbar.active ul li a:hover {
+#navbar.white-header ul li a:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -64,7 +73,7 @@
 }
 
 /* TOGGLE menu */
-#checkBtn {
+#check-button {
   font-size: 30px;
   float: right;
   line-height: 80px;
@@ -85,9 +94,7 @@
   transition: all 0.5s ease-in-out;
   background: white;
 }
-
-#menu-btn__burger::before,
-#menu-btn__burger::after {
+#menu-btn__burger::before, #menu-btn__burger::after {
   content: "";
   position: absolute;
   width: 0.9em;
@@ -96,25 +103,21 @@
   transition: all 0.5s ease-in-out;
   background: white;
 }
-
 #menu-btn__burger::before {
   transform: translateY(-0.3em);
 }
-
 #menu-btn__burger::after {
   transform: translateY(0.3em);
 }
 
-#checkBtn.checkedBox #menu-btn__burger {
+#check-button.checkedBox #menu-btn__burger {
   transform: translateX(-1em);
   background: transparent;
 }
-
-#checkBtn.checkedBox #menu-btn__burger::before {
+#check-button.checkedBox #menu-btn__burger::before {
   transform: rotate(45deg) translate(20px, -20px);
 }
-
-#checkBtn.checkedBox #menu-btn__burger::after {
+#check-button.checkedBox #menu-btn__burger::after {
   transform: rotate(-45deg) translate(20px, 20px);
 }
 
@@ -148,7 +151,7 @@
   font-size: 3em;
   margin-bottom: 0;
   opacity: 0;
-  width: 5.5em;
+  width: 6em;
   animation: typing2 0.5s steps(35, end);
   animation-fill-mode: forwards;
   animation-delay: 0.3s;
@@ -201,6 +204,7 @@
     border: none;
   }
 }
+/*--------------Media frames-------------- */
 @media (max-width: 750px) {
   .landing-text {
     top: 50%;
@@ -211,20 +215,20 @@
   }
 
   #navbar ul {
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     background-color: #ffffff;
     flex-direction: column;
     position: fixed;
-    left: 0;
+    left: -100%;
     top: 2.5em;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
     z-index: 1;
-    display: none;
+    transition: all 0.3s ease-in;
   }
   #navbar ul li {
     padding: 10px;
@@ -232,17 +236,16 @@
   #navbar ul li a {
     font-size: 1.5em;
     text-transform: uppercase;
-    color: #444444;
+    color: rgba(125, 125, 125, 0.95);
   }
   #navbar ul li a:hover {
     color: #000000;
   }
-
-  #navbar.active-menu ul {
-    display: flex;
+  #navbar.open-toggle-menu ul {
+    left: 0;
   }
 
-  #checkBtn {
+  #check-button {
     display: inline-block;
     transform: translateY(-10px);
   }
@@ -250,14 +253,10 @@
   #menu-btn__burger {
     display: inline-block;
   }
-
-  #check:checked ~ #navigationContainer ul {
-    left: 0;
-  }
 }
 /* ------------ Footer Section --------------------------------------------------------------------*/
 .footer-section {
-  height: auto;
+  height: 500px;
   background-color: #ffffff;
 }
 
@@ -279,53 +278,11 @@
   background-color: #ffffff;
 }
 
-#wrapper {
-  max-width: 2000px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
+@media (max-width: 750px) {
+  .footer-logo {
+    width: 20%;
+  }
 }
-
-/* ------------ About Section --------------------------------------------------------------------*/
-.about-section {
-  height: 100vh;
-  background-image: url("../img/about-bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-  background-color: #0f0f0f;
-}
-
-.about-container {
-  box-shadow: 2px 2px 12px black;
-  width: 60em;
-  height: 24em;
-  margin: auto;
-  margin-top: 2%;
-  background-color: #fcfcfc;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.about-photo {
-  width: 20%;
-  height: auto;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.about-text {
-  font-family: "Encode Sans Semi Condensed", sans-serif;
-  margin-right: 1%;
-  color: black;
-  font-weight: 600;
-}
-
-.about-text span {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-
 /* ------------ Projects Section --------------------------------------------------------------------*/
 .projects-section {
   height: 100vh;
@@ -415,18 +372,67 @@
   cursor: pointer;
 }
 
+@media (max-width: 750px) {
+  .project-list {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .project-card {
+    height: 300px;
+  }
+}
+#wrapper {
+  max-width: 2560px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  min-width: 320px;
+}
+
+/* ------------ About Section --------------------------------------------------------------------*/
+.about-section {
+  height: 100vh;
+  background-image: url("../img/about-bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  background-color: #0f0f0f;
+}
+
+.about-container {
+  box-shadow: 2px 2px 12px black;
+  width: 60em;
+  height: 24em;
+  margin: auto;
+  margin-top: 2%;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about-photo {
+  width: 20%;
+  height: auto;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.about-text {
+  font-family: "Encode Sans Semi Condensed", sans-serif;
+  margin-right: 1%;
+  color: black;
+  font-weight: 600;
+}
+
+.about-text span {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 /* =======================================MEDIA QUERIES=========================================== */
 /*--- 1000px and down------------------------------------*/
 @media (max-width: 1000px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  section {
-    height: 100vh;
-    background-size: cover;
-  }
-
   .about-container {
     width: 90%;
     border-radius: 10px;
@@ -454,19 +460,6 @@
   .about-photo {
     margin-top: 0;
     width: 30%;
-  }
-
-  .project-list {
-    width: 100%;
-    display: inline-block;
-  }
-
-  .footer-logo {
-    width: 20%;
-  }
-
-  .project-card {
-    height: 300px;
   }
 }
 /* Height 500px and less*/

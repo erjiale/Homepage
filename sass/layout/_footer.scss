@@ -1,7 +1,7 @@
 
 /* ------------ Footer Section --------------------------------------------------------------------*/
 .footer-section {
-  height: auto;
+  height: 500px;
   background-color: #ffffff;
 }
 .footer-logo {
@@ -19,3 +19,9 @@
   float: left;
   background-color: #ffffff;
 } 
+
+@media(max-width: 750px) {
+  .footer-logo {
+    width: 20%; 
+  }
+}
