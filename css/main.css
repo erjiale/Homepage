@@ -67,30 +67,30 @@
 }
 
 #menu-btn__burger {
-  width: 0.9em;
-  height: 0.15em;
-  border-radius: 0.3em;
+  width: 28.5px;
+  height: 4.5px;
+  border-radius: 9px;
   transition: all 0.5s ease-in-out;
   background: #d4af37;
 }
 #menu-btn__burger::before, #menu-btn__burger::after {
   content: "";
   position: absolute;
-  width: 0.9em;
-  height: 0.15em;
-  border-radius: 0.3em;
+  width: 28.5px;
+  height: 4.5px;
+  border-radius: 9px;
   transition: all 0.5s ease-in-out;
   background: #d4af37;
 }
 #menu-btn__burger::before {
-  transform: translateY(-0.3em);
+  transform: translateY(-9px);
 }
 #menu-btn__burger::after {
-  transform: translateY(0.3em);
+  transform: translateY(9px);
 }
 
 #check-button.checkedBox #menu-btn__burger {
-  transform: translateX(-1em);
+  transform: translateX(-32px);
   background: transparent;
 }
 #check-button.checkedBox #menu-btn__burger::before {

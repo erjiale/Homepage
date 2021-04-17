@@ -73,9 +73,9 @@
 }
 
 #menu-btn__burger {
-  width: 0.9em;
-  height: 0.15em;
-  border-radius: 0.3em;
+  width: 28.5px; //0.9em;
+  height: 4.5px; //0.15em;
+  border-radius: 9px; //0.3em;
   transition: all 0.5s ease-in-out;
   background: 	rgb(212,175,55);
 
@@ -83,25 +83,28 @@
   &::after {
     content: "";
     position: absolute;
-    width: 0.9em;
-    height: 0.15em;
-    border-radius: 0.3em;
+    width: 28.5px; //0.9em;
+    height: 4.5px; //0.15em;
+    border-radius: 9px; //0.3em;
     transition: all 0.5s ease-in-out;
     background: 	rgb(212,175,55);
     // background: inherit
   }
 
   &::before {
-    transform: translateY(-0.3em);
+    transform: translateY(-9px);
+    // transform: translateY(-20%);
   }
 
   &::after {
-    transform: translateY(0.3em);
+    transform: translateY(9px);
+    // transform: translateY(20%);
+
   }
 }
 
 #check-button.checkedBox #menu-btn__burger {
-  transform: translateX(-1em);
+  transform: translateX(-32px);
   background: transparent;
 
   &::before {
