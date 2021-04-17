@@ -48,11 +48,22 @@ function scrollToProjects() {
 }
 
 // Header features
-const changeBackground = () => {
+const changeHeaderBackground = () => {
     var navbar_elem = document.getElementById('navbar');
-    window.scrollY >= 80 ? navbar_elem.classList.add('white-header') : navbar_elem.classList.remove('white-header');
+    var header_logo = document.getElementById('header-logo');
+
+    if (window.scrollY >= 80) {
+        navbar_elem.classList.add('white-header');
+        header_logo.src = "./img/logos/jia-logo-black.png";
+    }
+    else {
+        navbar_elem.classList.remove('white-header');
+        header_logo.src = "./img/logos/jia-logo-white.png";
+    }
+    // window.scrollY >= 80 ?
+    //     navbar_elem.classList.add('white-header') : navbar_elem.classList.remove('white-header');
 };
-window.addEventListener('scroll', changeBackground);
+window.addEventListener('scroll', changeHeaderBackground);
 
 
 

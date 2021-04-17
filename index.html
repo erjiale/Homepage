@@ -17,29 +17,31 @@
 
 <body id="wrapper">
 
-	<!----------------- Header + Main section ------------------->
+	<!--Header -->
+	<nav id="navbar">
+		<a href="#home" onClick="scrollToHome()" class="logo">
+			<img id="header-logo" alt="Jia" src="./img/logos/jia-logo-white.png" class="nav-logo-size">
+		</a>
+		<ul>
+			<li><a href="#home" onClick="scrollToHome()">Home</a></li>
+			<li><a href="#about" onClick="scrollToAbout()">About</a></li>
+			<li><a href="#portfolio" onClick="scrollToProjects()">Portfolio</a></li>
+		</ul>
+		<!-- Burger Nav Menu on Smaller Screens -->
+		<input type="checkbox" id="check" />
+		<label for="check" id="check-button" onclick="onToggleMenu()">
+			<div id="menu-btn__burger"></div>
+
+		</label>
+	</nav>
+
+	<!----------------- Landing section ------------------->
 	<section id="landing-section">
 		<img src="./img/bg.jpg" />
-		<!--Header -->
-		<nav id="navbar">
-			<a href="#home" onClick="scrollToHome()" class="logo"><img id="changeLogoColor" alt="Jia"
-					src="./img/logos/jia-logo-black.png" class="nav-logo-size"></a>
-			<ul>
-				<li><a href="#home" onClick="scrollToHome()">Home</a></li>
-				<li><a href="#about" onClick="scrollToAbout()">About</a></li>
-				<li><a href="#portfolio" onClick="scrollToProjects()">Portfolio</a></li>
-			</ul>
-			<!-- Burger Nav Menu on Smaller Screens -->
-			<input type="checkbox" id="check" />
-			<label for="check" id="check-button" onclick="onToggleMenu()">
-				<div id="menu-btn__burger"></div>
-
-			</label>
-		</nav>
 		<!-- Main -->
 		<div class="container" id="home-sect">
-			<div class="row ">
-				<div class="col-lg-12">
+			<div class="row h-100 landing-row-class">
+				<div class="col-lg-12 h-100">
 					<div class="landing-text">
 						<p>Hello,</p>
 						<p>I'M <u>JIALE</u></p>
