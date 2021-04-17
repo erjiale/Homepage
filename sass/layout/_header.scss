@@ -73,9 +73,9 @@
 }
 
 #menu-btn__burger {
-  width: 28.5px; //0.9em;
-  height: 4.5px; //0.15em;
-  border-radius: 9px; //0.3em;
+  width: 0.9em;
+  height: 0.15em;
+  border-radius: 0.3em;
   transition: all 0.5s ease-in-out;
   background: 	rgb(212,175,55);
 
@@ -83,36 +83,37 @@
   &::after {
     content: "";
     position: absolute;
-    width: 28.5px; //0.9em;
-    height: 4.5px; //0.15em;
-    border-radius: 9px; //0.3em;
+    width: 0.9em;
+    height: 0.15em;
+    border-radius: 0.3em;
     transition: all 0.5s ease-in-out;
     background: 	rgb(212,175,55);
-    // background: inherit
   }
 
   &::before {
-    transform: translateY(-9px);
-    // transform: translateY(-20%);
+    transform: translateY(-0.3em);
+    -webkit-transform: translateY(-0.3em);
   }
 
   &::after {
-    transform: translateY(9px);
-    // transform: translateY(20%);
-
+    transform: translateY(0.3em);
+    -webkit-transform: translateY(0.3em);
   }
 }
 
 #check-button.checkedBox #menu-btn__burger {
-  transform: translateX(-32px);
+  transform: translateX(-1em);
+  -webkit-transform: translateX(-1em);
   background: transparent;
 
   &::before {
     transform: rotate(45deg) translate(20px, -20px);
+    -webkit-transform: rotate(45deg) translate(20px, -20px);
   }
 
   &::after {
     transform: rotate(-45deg) translate(20px, 20px);
+    -webkit-transform: rotate(-45deg) translate(20px, 20px);
   }
 }
 
@@ -158,6 +159,7 @@
   #check-button {
     display: inline-block;
     transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
   }
 
   #menu-btn__burger {

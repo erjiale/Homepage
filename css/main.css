@@ -67,37 +67,42 @@
 }
 
 #menu-btn__burger {
-  width: 28.5px;
-  height: 4.5px;
-  border-radius: 9px;
+  width: 0.9em;
+  height: 0.15em;
+  border-radius: 0.3em;
   transition: all 0.5s ease-in-out;
   background: #d4af37;
 }
 #menu-btn__burger::before, #menu-btn__burger::after {
   content: "";
   position: absolute;
-  width: 28.5px;
-  height: 4.5px;
-  border-radius: 9px;
+  width: 0.9em;
+  height: 0.15em;
+  border-radius: 0.3em;
   transition: all 0.5s ease-in-out;
   background: #d4af37;
 }
 #menu-btn__burger::before {
-  transform: translateY(-9px);
+  transform: translateY(-0.3em);
+  -webkit-transform: translateY(-0.3em);
 }
 #menu-btn__burger::after {
-  transform: translateY(9px);
+  transform: translateY(0.3em);
+  -webkit-transform: translateY(0.3em);
 }
 
 #check-button.checkedBox #menu-btn__burger {
-  transform: translateX(-32px);
+  transform: translateX(-1em);
+  -webkit-transform: translateX(-1em);
   background: transparent;
 }
 #check-button.checkedBox #menu-btn__burger::before {
   transform: rotate(45deg) translate(20px, -20px);
+  -webkit-transform: rotate(45deg) translate(20px, -20px);
 }
 #check-button.checkedBox #menu-btn__burger::after {
   transform: rotate(-45deg) translate(20px, 20px);
+  -webkit-transform: rotate(-45deg) translate(20px, 20px);
 }
 
 /*--------------Media frames-------------- */
@@ -139,6 +144,7 @@
   #check-button {
     display: inline-block;
     transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
   }
 
   #menu-btn__burger {
