@@ -1,0 +1,92 @@
+$section-height: 770px;
+
+/* ------------ Projects Section --------------------------------------------------------------------*/
+.projects-section {
+  height: $section-height;
+  background-color: #ffffff;
+}
+
+.project-list {
+  list-style: none;
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+.project-card {
+  height: 400px;
+  background-color: #000000;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center; /* y-axis center, work with display:flex*/
+  justify-content: center;/* x-axis center*/
+  color: white;
+}
+.project-card a {
+  color: white;
+}
+
+.vermilion:hover {
+  background-color: rgb(134, 25, 6);
+  transition: background-color 0.05s ease 0.2s;
+  cursor: pointer;
+}
+.recipeFinder:hover {
+  background-color: rgb(240, 136, 0);
+  transition: background-color 0.05s ease 0.2s;
+  cursor: pointer;
+}
+
+.recipeFinder-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; 
+  border: 1px solid #888;
+  left: 0;
+  top: 0;
+  width: 100%;     
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+}
+.recipeFinder-modal div {
+  margin: auto;
+  width: 66%;
+}
+.recipeFinder-header {
+  background-color: rgb(240, 136, 0);
+  padding: 5px 20px;
+}
+.recipeFinder-content {
+  background-color: #fefefe;
+  padding: 20px;
+}
+.recipeFinder-modal img {
+  width: 100%;
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// Media Queries
+@media(max-width: 750px) {
+  .project-list {
+    width: 100%;
+    display: inline-block; 
+  }
+  .project-card {
+    height: 300px;
+  }
+}

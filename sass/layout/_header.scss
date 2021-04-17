@@ -1,0 +1,163 @@
+/* ------------ Navigation/Header bar --------------------------------------------------------------------*/
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  width: 100%;
+  background-color: transparent;
+  padding: 0px 5%;
+  position: fixed;
+  z-index: 5;
+  transition: all 0.3s ease-in;
+  max-width: inherit;
+
+  a {
+    margin: 0 1em;
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  ul li a {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  ul li a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+#navbar.white-header {
+    background: rgb(255, 255, 255);
+    box-shadow:  2px 2px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in;
+
+    ul li a {
+      color: rgba(125, 125, 125, 0.95);
+    }
+
+    ul li a:hover {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+}
+
+.nav-logo-size {
+  height: 2em;
+  width: 2.5em;
+}
+
+/* TOGGLE menu */
+#check-button {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+}
+
+#check {
+  display: none;
+}
+
+#menu-btn__burger {
+  width: 0.9em;
+  height: 0.15em;
+  border-radius: 0.3em;
+  transition: all 0.5s ease-in-out;
+  background: 	rgb(212,175,55);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.9em;
+    height: 0.15em;
+    border-radius: 0.3em;
+    transition: all 0.5s ease-in-out;
+    background: 	rgb(212,175,55);
+    // background: inherit
+  }
+
+  &::before {
+    transform: translateY(-0.3em);
+  }
+
+  &::after {
+    transform: translateY(0.3em);
+  }
+}
+
+#check-button.checkedBox #menu-btn__burger {
+  transform: translateX(-1em);
+  background: transparent;
+
+  &::before {
+    transform: rotate(45deg) translate(20px, -20px);
+  }
+
+  &::after {
+    transform: rotate(-45deg) translate(20px, 20px);
+  }
+}
+
+/*--------------Media frames-------------- */
+@media(max-width: 750px) {
+  #navbar {
+    justify-content: space-between;
+
+    ul {
+      margin: 0px;
+      padding: 0px;
+      background-color: #ffffff;
+      flex-direction: column;
+      position: fixed;  
+      left: -100%;
+      top: 2.5em;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+      transition: all 0.3s ease-in;
+
+      li {
+        padding: 10px;
+      }
+      li a {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: rgba(125, 125, 125, 0.95);
+      }
+      li a:hover {
+        color: #000000;
+      }
+    }
+    
+    &.open-toggle-menu ul {
+      left: 0;
+    }
+  }
+
+  #check-button {
+    display: inline-block;
+    transform: translateY(-10px);
+  }
+
+  #menu-btn__burger {
+    display: inline-block;
+  }
+}
