@@ -442,6 +442,10 @@
 /* =======================================MEDIA QUERIES=========================================== */
 /*--- 1000px and down------------------------------------*/
 @media (max-width: 1000px) {
+  * {
+    box-sizing: border-box;
+  }
+
   .about-container {
     width: 90%;
     border-radius: 10px;
@@ -480,10 +484,6 @@
   .about-section {
     height: 100%;
   }
-
-  /* .projects-section {
-      height: auto;
-  } */
 }
 
 /*# sourceMappingURL=main.css.map */
