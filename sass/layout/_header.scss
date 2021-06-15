@@ -93,27 +93,37 @@
   &::before {
     transform: translateY(-0.3em);
     -webkit-transform: translateY(-0.3em);
+    -moz-transform: translateY(-0.3em);
+    -ms-transform: translateY(-0.3em);
   }
 
   &::after {
     transform: translateY(0.3em);
     -webkit-transform: translateY(0.3em);
+    -moz-transform: translateY(0.3em);
+    -ms-transform: translateY(0.3em);
   }
 }
 
 #check-button.checkedBox #menu-btn__burger {
   transform: translateX(-1em);
   -webkit-transform: translateX(-1em);
+  -moz-transform: translateX(-1em);
+  -ms-transform: translateX(-1em);
   background: transparent;
 
   &::before {
     transform: rotate(45deg) translate(20px, -20px);
     -webkit-transform: rotate(45deg) translate(20px, -20px);
+    -moz-transform: rotate(45deg) translate(20px, -20px);
+    -ms-transform: rotate(45deg) translate(20px, -20px);
   }
 
   &::after {
     transform: rotate(-45deg) translate(20px, 20px);
     -webkit-transform: rotate(-45deg) translate(20px, 20px);
+    -moz-transform: rotate(-45deg) translate(20px, 20px);
+    -ms-transform: rotate(-45deg) translate(20px, 20px);
   }
 }
 
@@ -160,6 +170,8 @@
     display: inline-block;
     transform: translateY(-10px);
     -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
   }
 
   #menu-btn__burger {

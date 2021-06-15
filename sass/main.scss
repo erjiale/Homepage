@@ -4,6 +4,7 @@
 @import "layout/_landing.scss";
 @import "layout/_footer.scss";
 @import "layout/_projects.scss";
+@import "layout/_projects2.scss";
 
 #wrapper {
     max-width: 2560px;
@@ -11,46 +12,6 @@
     margin-right: auto;
     position: relative;
     min-width: 320px;
-}
-
-/* ------------ About Section --------------------------------------------------------------------*/
-.about-section {
-    height: 770px;
-    background-image: url("../img/about-bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: relative;
-    background-color: #0f0f0f;
-}
-
-.about-container {
-    box-shadow: 2px 2px 12px rgba(0, 0, 0.2);
-    width: 60em;
-    height: 24em;
-    margin: auto;
-    margin-top: 2%;
-    background-color: #fcfcfc;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.about-photo {
-    width: 20%;
-    height: auto;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.about-text {
-    font-family: 'Encode Sans Semi Condensed', sans-serif;
-    margin-right: 1%;
-    color: black;
-    font-weight: 600;
-}
-
-.about-text span {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* =======================================MEDIA QUERIES=========================================== */
@@ -65,38 +26,9 @@
     }
 }
 
-
-/*--- 750px & DOWN ------------------------------------*/
-@media(max-width: 750px) {
-    .about-section {
-        height: auto;
-    }
-    
-    .about-container {
-        top: 0;
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-        align-items: center;
-    }
-
-    .about-text {
-        width: 90%;
-        text-align: center;
-    }
-
-    .about-photo {
-        margin-top: 0;
-        width: 30%;
-    }
-}
-
 /* Height 500px and less*/
 @media(max-height: 500px) {
     section {
-        height: 100%;
-    }
-    .about-section { 
         height: 100%;
     }
 }

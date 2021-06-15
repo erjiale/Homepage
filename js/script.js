@@ -60,15 +60,9 @@ const changeHeaderBackground = () => {
         navbar_elem.classList.remove('white-header');
         header_logo.src = "./img/logos/jia-logo-white.png";
     }
-    // window.scrollY >= 80 ?
-    //     navbar_elem.classList.add('white-header') : navbar_elem.classList.remove('white-header');
 };
 window.addEventListener('scroll', changeHeaderBackground);
 
-
-
-////// IF WHITE HEADER, then black BURGER, else white BURGER
-//////
 // Header burger menu
 function onToggleMenu() {
     var checkBox = document.getElementById("check-button");
