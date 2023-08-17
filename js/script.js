@@ -1,56 +1,58 @@
+window.onload = () => {
+    document.addEventListener('DOMContentLoaded', () => {
+        // Modals
+        function projectModals() {
+            let modal = document.getElementById('recipeFinder-modal');
+            let openDiv = document.getElementById('openRecipeFinderModal');
+            let span = document.getElementsByClassName('close')[0];
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Modals
-    function projectModals() {
-        var modal = document.getElementById('recipeFinder-modal');
-        var openDiv = document.getElementById('openRecipeFinderModal');
-        var span = document.getElementsByClassName('close')[0];
-
-        openDiv.onclick = function () {
-            modal.style.display = "block";
-        }
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
+            openDiv.onclick = function () {
+                modal.style.display = "block";
+            }
+            span.onclick = function () {
                 modal.style.display = "none";
             }
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         }
-    }
-    projectModals();
-})
+        projectModals();
+    })
+};
 
 // Scrolling Into View
-function scrollToHome() {
-    var elem = document.getElementById('home-sect')
-    var menu_elem = document.getElementById("navbar");
-    var checkBox = document.getElementById("check-button");
+scrollToHome = () => {
+    let elem = document.getElementById('home-sect')
+    let menu_elem = document.getElementById("navbar");
+    let checkBox = document.getElementById("check-button");
     menu_elem.classList.remove("open-toggle-menu");
     elem.scrollIntoView({ behavior: "smooth" });
     checkBox.classList.remove("checkedBox");
-}
-function scrollToAbout() {
-    var elem = document.getElementById('about-sect')
-    var menu_elem = document.getElementById("navbar");
-    var checkBox = document.getElementById("check-button");
+};
+scrollToAbout = () => {
+    let elem2 = document.getElementById('about-sect')
+    let menu_elem2 = document.getElementById("navbar");
+    let checkBox2 = document.getElementById("check-button");
+    menu_elem2.classList.remove("open-toggle-menu");
+    debugger
+    elem2.scrollIntoView({ behavior: "smooth" });
+    checkBox2.classList.remove("checkedBox");
+};
+scrollToProjects = () => {
+    let elem = document.getElementById('projects-sect')
+    let menu_elem = document.getElementById("navbar");
+    let checkBox = document.getElementById("check-button");
     menu_elem.classList.remove("open-toggle-menu");
     elem.scrollIntoView({ behavior: "smooth" });
     checkBox.classList.remove("checkedBox");
-}
-function scrollToProjects() {
-    var elem = document.getElementById('projects-sect')
-    var menu_elem = document.getElementById("navbar");
-    var checkBox = document.getElementById("check-button");
-    menu_elem.classList.remove("open-toggle-menu");
-    elem.scrollIntoView({ behavior: "smooth" });
-    checkBox.classList.remove("checkedBox");
-}
+};
 
 // Header features
 const changeHeaderBackground = () => {
-    var navbar_elem = document.getElementById('navbar');
-    var header_logo = document.getElementById('header-logo');
+    let navbar_elem = document.getElementById('navbar');
+    let header_logo = document.getElementById('header-logo');
 
     if (window.scrollY >= 80) {
         navbar_elem.classList.add('white-header');
@@ -65,10 +67,10 @@ window.addEventListener('scroll', changeHeaderBackground);
 
 // Header burger menu
 function onToggleMenu() {
-    var checkBox = document.getElementById("check-button");
-    var check = document.getElementById("check");
-    var navbar_element = document.getElementById("navbar");
-    var burger_menu = document.getElementById("menu-btn_burger");
+    let checkBox = document.getElementById("check-button");
+    let check = document.getElementById("check");
+    let navbar_element = document.getElementById("navbar");
+    let burger_menu = document.getElementById("menu-btn_burger");
     if (!check.checked) {
         checkBox.classList.add("checkedBox");
         navbar_element.classList.add("open-toggle-menu");

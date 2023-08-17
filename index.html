@@ -19,13 +19,13 @@
 
 	<!--Header -->
 	<nav id="navbar">
-		<a href="#home" onClick="scrollToHome()" class="logo">
+		<a href="#home" onclick="scrollToHome()" class="logo">
 			<img id="header-logo" alt="Jia" src="./img/logos/jia-logo-white.png" class="nav-logo-size">
 		</a>
 		<ul>
-			<li><a href="#home" onClick="scrollToHome()">Home</a></li>
-			<li><a href="#about" onClick="scrollToAbout()">About</a></li>
-			<li><a href="#portfolio" onClick="scrollToProjects()">Portfolio</a></li>
+			<li><a href="#home" onclick="scrollToHome()">Home</a></li>
+			<!-- <li><a href="#about" onclick="scrollToAbout()">About</a></li> -->
+			<li><a href="#portfolio" onclick="scrollToProjects()">Portfolio</a></li>
 		</ul>
 		<!-- Burger Nav Menu on Smaller Screens -->
 		<input type="checkbox" id="check" />
@@ -76,8 +76,9 @@
 			</div>
 		</div>
 	</div> -->
-	<!-- TIMELINE -->
-	<section class="timeline">
+
+	<!----------------- TIMELINE ------------------->
+	<section class="timeline" id="projects-sect">
 		<div class="bubble-container">
 			<div id="talkbubble">
 				<p>Technology enthusiast who wants to be able to turn ideas into reality!
