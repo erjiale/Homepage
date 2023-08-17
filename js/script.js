@@ -24,12 +24,13 @@ window.onload = () => {
 
 // Scrolling Into View
 scrollToHome = () => {
-    let elem = document.getElementById('home-sect')
-    let menu_elem = document.getElementById("navbar");
-    let checkBox = document.getElementById("check-button");
-    menu_elem.classList.remove("open-toggle-menu");
-    elem.scrollIntoView({ behavior: "smooth" });
-    checkBox.classList.remove("checkedBox");
+    scrollHelper("home-sect");
+    // let elem = document.getElementById('home-sect')
+    // let menu_elem = document.getElementById("navbar");
+    // let checkBox = document.getElementById("check-button");
+    // menu_elem.classList.remove("open-toggle-menu");
+    // elem.scrollIntoView({ behavior: "smooth" });
+    // checkBox.classList.remove("checkedBox");
 };
 scrollToAbout = () => {
     let elem2 = document.getElementById('about-sect')
@@ -41,13 +42,17 @@ scrollToAbout = () => {
     checkBox2.classList.remove("checkedBox");
 };
 scrollToProjects = () => {
-    let elem = document.getElementById('projects-sect')
+    scrollHelper
+};
+
+scrollToId = (id) => {
+    let elem = document.getElementById(id)
     let menu_elem = document.getElementById("navbar");
     let checkBox = document.getElementById("check-button");
     menu_elem.classList.remove("open-toggle-menu");
     elem.scrollIntoView({ behavior: "smooth" });
     checkBox.classList.remove("checkedBox");
-};
+}
 
 // Header features
 const changeHeaderBackground = () => {
