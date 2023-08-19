@@ -48,10 +48,8 @@ $font-fam: 'Encode Sans Semi Condensed', sans-serif;
       &:before {
         content: "";
         position: absolute;
-        right: 100%;
-        top: 50%;
-        width: 0;
-        height: 0;
+        right: 98%;
+        top: 40%;
         border-top: 13px solid transparent;
         border-right: 26px solid #f6d285;
         border-bottom: 13px solid transparent;
@@ -225,9 +223,6 @@ $font-fam: 'Encode Sans Semi Condensed', sans-serif;
     .bubble-container {
       width: 30%;
       left: 65%;
-      // #talkbubble p {
-      //   font-size: 1.25rem;
-      // }
     }
   }
 }
@@ -275,10 +270,19 @@ $font-fam: 'Encode Sans Semi Condensed', sans-serif;
 @media screen and (max-width: 610px) {
   .timeline {
     .bubble-container {
-      width: 55%;
-      // #talkbubble p {
-      //   font-size: 1rem;
-      // }
+      position: static;
+      width: 80%;
+      margin: auto;
+      &:before {
+        display: none;
+        // content: "";
+        // position: absolute;
+        // right: 100%;
+        // top: 50%;
+        // border-top: 13px solid transparent;
+        // border-right: 26px solid #f6d285;
+        // border-bottom: 13px solid transparent;
+      }
     }
   }
 }
@@ -292,13 +296,6 @@ $font-fam: 'Encode Sans Semi Condensed', sans-serif;
     .my-image-outter {
       margin: 0 0 0 10px;
     }
-    .bubble-container {
-      width: 55%;
-      left: 40%;
-      #talkbubble p {
-        font-size: 1rem;
-      }
-    }
   }
 }
 
@@ -308,11 +305,6 @@ $font-fam: 'Encode Sans Semi Condensed', sans-serif;
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    }
-    .bubble-container {
-      #talkbubble::before {
-        top: 40%; 
-      }
     }
   }
 }

@@ -23,28 +23,6 @@ window.onload = () => {
 };
 
 // Scrolling Into View
-scrollToHome = () => {
-    scrollHelper("home-sect");
-    // let elem = document.getElementById('home-sect')
-    // let menu_elem = document.getElementById("navbar");
-    // let checkBox = document.getElementById("check-button");
-    // menu_elem.classList.remove("open-toggle-menu");
-    // elem.scrollIntoView({ behavior: "smooth" });
-    // checkBox.classList.remove("checkedBox");
-};
-scrollToAbout = () => {
-    let elem2 = document.getElementById('about-sect')
-    let menu_elem2 = document.getElementById("navbar");
-    let checkBox2 = document.getElementById("check-button");
-    menu_elem2.classList.remove("open-toggle-menu");
-    debugger
-    elem2.scrollIntoView({ behavior: "smooth" });
-    checkBox2.classList.remove("checkedBox");
-};
-scrollToProjects = () => {
-    scrollHelper
-};
-
 scrollToId = (id) => {
     let elem = document.getElementById(id)
     let menu_elem = document.getElementById("navbar");

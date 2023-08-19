@@ -33,7 +33,7 @@
 }
 
 #navbar.white-header {
-  background: white;
+  background: rgb(255, 255, 255);
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in;
 }
@@ -71,7 +71,7 @@
   height: 0.15em;
   border-radius: 0.3em;
   transition: all 0.5s ease-in-out;
-  background: #d4af37;
+  background: rgb(212, 175, 55);
 }
 #menu-btn__burger::before, #menu-btn__burger::after {
   content: "";
@@ -80,7 +80,7 @@
   height: 0.15em;
   border-radius: 0.3em;
   transition: all 0.5s ease-in-out;
-  background: #d4af37;
+  background: rgb(212, 175, 55);
 }
 #menu-btn__burger::before {
   transform: translateY(-0.3em);
@@ -150,7 +150,6 @@
   #navbar.open-toggle-menu ul {
     left: 0;
   }
-
   #check-button {
     display: inline-block;
     transform: translateY(-10px);
@@ -158,7 +157,6 @@
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
   }
-
   #menu-btn__burger {
     display: inline-block;
   }
@@ -309,6 +307,9 @@
   .footer-logo {
     width: 20%;
   }
+  .footer-section {
+    height: 160px;
+  }
 }
 /* ------------ Projects Section --------------------------------------------------------------------*/
 .projects-section {
@@ -329,10 +330,8 @@
   margin: 10px;
   padding: 10px;
   display: flex;
-  align-items: center;
-  /* y-axis center, work with display:flex*/
-  justify-content: center;
-  /* x-axis center*/
+  align-items: center; /* y-axis center, work with display:flex*/
+  justify-content: center; /* x-axis center*/
   color: white;
 }
 
@@ -341,13 +340,13 @@
 }
 
 .vermilion:hover {
-  background-color: #861906;
+  background-color: rgb(134, 25, 6);
   transition: background-color 0.05s ease 0.2s;
   cursor: pointer;
 }
 
 .recipeFinder:hover {
-  background-color: #f08800;
+  background-color: rgb(240, 136, 0);
   transition: background-color 0.05s ease 0.2s;
   cursor: pointer;
 }
@@ -372,7 +371,7 @@
 }
 
 .recipeFinder-header {
-  background-color: #f08800;
+  background-color: rgb(240, 136, 0);
   padding: 5px 20px;
 }
 
@@ -404,7 +403,6 @@
     width: 100%;
     display: inline-block;
   }
-
   .project-card {
     height: 300px;
   }
@@ -452,10 +450,8 @@
 .timeline .bubble-container #talkbubble:before {
   content: "";
   position: absolute;
-  right: 100%;
-  top: 50%;
-  width: 0;
-  height: 0;
+  right: 98%;
+  top: 40%;
   border-top: 13px solid transparent;
   border-right: 26px solid #f6d285;
   border-bottom: 13px solid transparent;
@@ -568,7 +564,7 @@
 }
 .timeline ul li > div .live-demo-button:hover, .timeline ul li > div .source-code-button:hover {
   background: #ffffff;
-  box-shadow: 2px 2px 12px black;
+  box-shadow: 2px 2px 12px rgb(0, 0, 0);
   font-weight: 700;
 }
 .timeline ul li > div .live-demo-button.vermilion:hover, .timeline ul li > div .live-demo-button.recipefinder:hover {
@@ -638,7 +634,12 @@
 }
 @media screen and (max-width: 610px) {
   .timeline .bubble-container {
-    width: 55%;
+    position: static;
+    width: 80%;
+    margin: auto;
+  }
+  .timeline .bubble-container:before {
+    display: none;
   }
 }
 @media screen and (max-width: 450px) {
@@ -649,22 +650,12 @@
   .timeline .my-image-outter {
     margin: 0 0 0 10px;
   }
-  .timeline .bubble-container {
-    width: 55%;
-    left: 40%;
-  }
-  .timeline .bubble-container #talkbubble p {
-    font-size: 1rem;
-  }
 }
 @media screen and (max-width: 353px) {
   .timeline ul li > div .live-demo-button, .timeline .source-code-button {
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-  }
-  .timeline .bubble-container #talkbubble::before {
-    top: 40%;
   }
 }
 @media screen and (max-width: 317px) {
@@ -686,7 +677,6 @@
   * {
     box-sizing: border-box;
   }
-
   .about-container {
     width: 90%;
     border-radius: 10px;
